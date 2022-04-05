@@ -12,6 +12,9 @@ The github action does the following:
 
 This action could be very useful in order to give the students a confirmation that their request has been accepted and a further reminder about the deadline of their intended task with a calender event.
 
+The following flowchart illustrates the GitHub action workflow.
+
+![image](https://user-images.githubusercontent.com/102597887/161722916-662ae257-d0a3-40fe-b0df-6757f5a71b2b.png)
 
 ## Assumptions 
 
@@ -20,4 +23,3 @@ Since this Github action is specific to the https://github.com/KTH/devops-course
 - The 'merge_checker.py' file will be located at https://github.com/KTH/devops-course/tree/2022/tools
 - Task deadlines are fixed, and part of the proposal template
 
-![image](https://user-images.githubusercontent.com/102597887/161722916-662ae257-d0a3-40fe-b0df-6757f5a71b2b.png)
