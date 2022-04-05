@@ -10,7 +10,7 @@ The github action does the following:
 - Writes an email that contains a calendar event for the date of the deadline at 5pm if the deadline was written correctly in the body of the PR (it contains "task #"), otherwise it only includes the PR details and the info regarding who accepted the PR.
 - Sends an email w/details to parsed addresses.
 
-This action could be very useful in order to give the students a confirmation that their request has been accepted and a further reminder about the deadline of their intended task with a calender event.
+This action could be very useful in order to give the students a confirmation that their request has been accepted and a further reminder about the deadline of their intended task with a calender event. Students should also note that they may have to check their spam/junk folder to find the email.
 
 The following flowchart illustrates the GitHub action workflow.
 
