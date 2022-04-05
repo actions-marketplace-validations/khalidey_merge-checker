@@ -1,5 +1,5 @@
 name: "Merge Checker"
-description: "The GitHub action automatically generates an email confirmation that notifies the students with the details of their PR when merged."
+description: "Automatic email confirmation for students with the details of their PR when merged."
 author: "Khalid El Yaacoub & Simone Bonato"
 branding:
   icon: 'bell'  
