@@ -11,3 +11,11 @@ The github action does the following:
 - Sends an email w/details to parsed addresses.
 
 This action could be very useful in order to give the students a confirmation that their request has been accepted and a further reminder about the deadline of their intended task with a calender event.
+
+
+## Assumptions 
+
+Since this Github action is specific to the https://github.com/KTH/devops-course course, it is assumed that: 
+- Any new contributions/PR merges will take place in the https://github.com/KTH/devops-course/tree/2022/contributions path of the repository
+- The 'merge_checker.py' file will be located at https://github.com/KTH/devops-course/tree/2022/tools
+- Task deadlines are fixed, and part of the proposal template
