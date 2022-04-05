@@ -4,3 +4,38 @@ author: "Khalid El Yaacoub & Simone Bonato"
 branding:
   icon: 'bell'  
   color: 'blue'
+
+runs:
+  using: "composite"
+ 
+  steps:
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+     # Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.1
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: python -m pip install pytz
+
+      - id: file_changes
+        uses: trilom/file-changes-action@v1.2.3
+        with:
+          output: ' '
+          fileOutput: ' '
+
+      - name: Check merge
+        env:
+          REPO_FULLNAME: ${{ github.repository }}
+          FILE_CHANGES: ${{ steps.file_changes.outputs.files_added  }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          FILE_CHANGES_2: FILES
+          BODY: ${{ github.event.pull_request.body }}
+          MERGER: ${{ github.event.pull_request.merged_by.login }}
+          DATE_OF_MERGE: ${{ github.event.pull_request.merged_at }}
+     
+      - run: python ./tools/merge_checker.py
+      shell: bash
