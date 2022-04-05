@@ -2,7 +2,7 @@
 
 The following action is made to be used in the https://github.com/KTH/devops-course course and can only be used in that context. The 'merge-checker' Github action is an automatic email of PR merge success and calender event.
 
-The following GitHub action automatically generates an email confirmation that notifies the students with the details of their PR (title, description, deadline) and additional information (who and when accepted the PR), when it is merged in the main branch.
+The GitHub action automatically generates an email confirmation that notifies the students with the details of their PR (title, description, deadline) and additional information (who and when accepted the PR), when it is merged in the main branch.
 
 The github action does the following:
 
