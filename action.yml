@@ -38,4 +38,4 @@ runs:
           DATE_OF_MERGE: ${{ github.event.pull_request.merged_at }}
      
       - run: python ./tools/merge_checker.py
-      shell: bash
+        shell: bash
